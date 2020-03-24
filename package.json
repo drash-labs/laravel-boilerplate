@@ -31,5 +31,8 @@
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10",
         "webpack": "^4.41.6"
+    },
+    "dependencies": {
+        "minimist": "^1.2.5"
     }
 }

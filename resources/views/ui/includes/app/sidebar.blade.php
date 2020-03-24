@@ -12,9 +12,15 @@
             </a>
         </li>
         <li class="nav-item">
+            {{-- Link for Dashboard --}}
             <a class="nav-link" href="{{ route('home') }}">
                 <span class="menu-title">Dashboard</span>
                 <i class="fas fa-home menu-icon"></i>
+            </a>
+            {{--Link for blog posts--}}
+            <a class="nav-link" href="{{route('blogs')}}">
+                <span class="menu-title">Blog Posts</span>
+                <i class="fas fa-book menu-icon "></i>
             </a>
         </li>
         @can('users.index')
