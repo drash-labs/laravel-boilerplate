@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fb25c26c1973c0d638bf250366410b5",
+    "content-hash": "2bbee546ce8620cf437dc23178dc8d99",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3779,12 +3779,15 @@
                 "laravel-backup",
                 "spatie"
             ],
+<<<<<<< HEAD
+=======
             "funding": [
                 {
                     "url": "https://spatie.be/open-source/support-us",
                     "type": "custom"
                 }
             ],
+>>>>>>> b81183d8226afd24b7519f11937bca5aad1943f7
             "time": "2020-03-13T17:45:46+00:00"
         },
         {

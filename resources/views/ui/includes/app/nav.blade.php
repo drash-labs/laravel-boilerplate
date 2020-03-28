@@ -17,6 +17,7 @@
                     <i class="fas fa-home" title="Dashboard"></i>
                 </a>
             </li>
+            {{--Name display--}}
             <li class="nav-item nav-profile">
                 <a class="nav-link" href="{{ route('users.show', ['user' => Auth::user()->uuid]) }}">
                     <div class="nav-profile-img">
@@ -27,8 +28,16 @@
                     </div>
                 </a>
             </li>
+            {{-- create new blog post link --}}
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <a class="nav-link" href="{{route('Write blog')}}">
+                    <i class=" nav-profile-text ml-2">New Post</i>
+                </a>
+            </li>
+            {{--Log out button--}}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="fas fa-power-off" title="Logout"></i>
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -36,7 +45,8 @@
                 </form>
             </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+            data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
         </button>
     </div>

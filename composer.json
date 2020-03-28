@@ -19,7 +19,7 @@
         "owen-it/laravel-auditing": "^9.3",
         "sentry/sentry-laravel": "^1.7",
         "spatie/flysystem-dropbox": "^1.2",
-        "spatie/laravel-backup": "^6.7",
+        "spatie/laravel-backup": "^6.8",
         "spatie/laravel-permission": "^3.8",
         "yajra/laravel-datatables": "^1.5"
     },

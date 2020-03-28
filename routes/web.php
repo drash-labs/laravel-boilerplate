@@ -39,3 +39,11 @@ Route::namespace('Admin')->middleware(['auth', 'verified'])->name('admin.')->pre
 
     Route::get('/audits', 'AuditController@auditing')->name('auditing.index');
 });
+
+Route::get('/blogs','BlogsController@index')->name('blogs');
+Route::get('/blogs/create','BlogsController@create')->name('Write blog');
+Route::post('/blogs', 'Blogscontroller@store')->name('store_blog_path');
+Route::get('/blogs/{id}', 'BlogsController@show')->name('blog_path');
+Route::get('/blogs/{id}/edit','BlogsController@edit')->name('edit_blog');
+Route::put('/blogs/{id}', 'BlogsController@update')->name('update_blog_path');
+Route::delete('/blogs/{id}', 'BlogsController@destroy')->name('delete_blog_path');
